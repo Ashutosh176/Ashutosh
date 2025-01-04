@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/85734b73a0.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Port/logo.jpeg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1>Hi, I'm <span>Ashutosh Sharma</span></h1>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Port/Untitled.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hi, I'm Ashutosh Sharma, a passionate UI/UX designer dedicated to creating intuitive and engaging user experiences.
+                        With a strong foundation in both design principles and user-centered research, 
+                        I blend creativity with functionality to craft digital solutions that not only 
+                        look great but also solve real problems. I thrive on collaboration and believe 
+                        in the power of design to make complex processes simple and enjoyable. 
+                        Whether it's a website, app, or digital product, I focus on ensuring every interaction feels effortless and meaningful.
+                        Let's create something amazing together.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building android apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Bachelor of Engineering</span><br>Chandigarh University, Mohali (Punjab) | Pursuing</li>
+                            <li><span>Intermediate</span><br>Central Board of Secondary Education | 2021</li>
+                            <li><span>Matriculation</span><br>Central Board of Secondary Education | 2019</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title"><br>My Services</h1>
+            <div class="services-list">
+                <div>
+                    
+                    <h2><i class="fa-solid fa-code"></i> Web Design</h2><br>
+                    <p>At the heart of every great website is a seamless blend of aesthetics and functionality. I specialize in designing websites that not only look stunning but also provide an intuitive and engaging user experience. My approach to web design involves:
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    
+                    <h2><i class="fa-solid fa-globe"></i> UI/UX Design</h2><br>
+                    <p>Creating intuitive and engaging user experiences is my passion. My UI/UX design services focus on ensuring that every interaction a user has with your digital product is seamless, enjoyable, and efficient. Here's what I bring to the table:
+                    </p><br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2><i class="fa-brands fa-app-store-ios"></i> App Design</h2><br>
+                    <p>In today’s mobile-first world, a well-designed app is crucial for reaching and engaging users. My app design services are focused on creating intuitive, beautiful, and functional mobile experiences that keep users coming back. Here’s what I offer:
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+
+
+
+
+
+
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1><div class="sub-title">My Work</div></h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Port/work.1.jpeg">
+                    <div class="layer">
+                        <h3>Portfolio websites</h3><br>
+                        <p>Where creativity meets functionality.
+                        Some projects highlighted my journey as a UI/UX designer. 
+                        From web and app designs to complete digital solutions, 
+                        each project reflects my dedication to crafting intuitive and visually appealing experiences.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Port/work.2.jpeg">
+                    <div class="layer">
+                        <h3>Web designing</h3><br>
+                        <p>Crafting beautiful and functional websites is my specialty.
+                        Some of my web design projects showcase my ability to blend aesthetics with usability.
+                        Each website is designed with the end-user in mind, ensuring that every interaction is smooth and engaging.</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Port/work.3.jpeg">
+                    <div class="layer">
+                        <h3>App designing</h3><br>
+                        <p>Designing mobile applications that offer seamless and enjoyable user experiences is at the core of my work.
+                        Some of the app design projects highlighted my expertise in creating intuitive, visually appealing,
+                        and user-centered mobile experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+
+
+
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>ash067142@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+919720034393</p>
+                    <div class="social-icons">
+                    <a href="https://www.instagram.com/the_ashupandit/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ashutoshsharma007/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="Port/Ashutosh Sharma_clg.pdf"Download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email"required>
+                        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit"class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMTdaR8JVsJvWgHdFINHtg43e2TkbJz1_PsiqAuDr2SAC7ZpOKHirqIoQ-vfm8lu--aA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
