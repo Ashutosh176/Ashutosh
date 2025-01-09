@@ -13,6 +13,11 @@
 
 
 <body>
+    <div id="intro-screen">
+        <h1 id="greeting-text">Hello</h1>
+    </div>
+    
+    
     <div id="header">
         <div class="container">
             <nav>
@@ -175,7 +180,7 @@
                     <a href="https://www.linkedin.com/in/ashutoshsharma007/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href=""><i class="fa-brands fa-facebook"></i></a>
                     </div>
-                    <a href="Port/Ashutosh Sharma_clg.pdf"Download class="btn btn2">Download Resume</a>
+                    <a href="Port/Ashutosh Sharma (MDB).pdf"Download class="btn btn2">Download Resume</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -234,5 +239,42 @@
             .catch(error => console.error('Error!', error.message))
         })
       </script>
+      <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            const greetings = ['Hallo, Hi', 'Nǐ hǎo', 'Hola', 'नमस्ते'];
+            let index = 0;
+            
+            const greetingTextElement = document.getElementById('greeting-text');
+            const changeGreeting = setInterval(function() {
+                greetingTextElement.textContent = greetings[index];
+                index = (index + 1) % greetings.length;
+            }, 150);
+    
+            setTimeout(function() {
+                clearInterval(changeGreeting);
+                
+                const introScreen = document.getElementById('intro-screen');
+                introScreen.style.opacity = '0';
+                introScreen.style.transition = 'opacity 1s';
+                
+                setTimeout(function() {
+                    document.getElementById('header').scrollIntoView({
+                        behavior: 'smooth', 
+                        block: 'start', 
+                        inline: 'nearest',
+                        duration: 1500
+                    });
+                    
+                    setTimeout(function() {
+                        introScreen.style.display = 'none';
+                    }, 1000);
+                }, 1000);
+            }, 2000);
+        });
+    </script>
+    
+    
+    
+    
 </body>
 </html>
